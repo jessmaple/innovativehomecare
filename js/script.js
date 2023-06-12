@@ -1,80 +1,123 @@
-
-
 $(document).ready(function(){
-
-    // wow initiation
-    new WOW().init();
-
-    // navigation bar toggle
-    $('#navbar-toggler').click(function(){
-        $('.navbar-collapse').slideToggle(400);
+    // navigation toggle
+    $('.navbar-toggler-btn').click(function(){
+        $('.navbar-collapse').slideToggle(300);
+    });
+    // change navbar bg
+    $(document).scroll(function(){
+        var $nav = $('.navbar');
+        $nav.toggleClass('change-on-scroll', $(this).scrollTop() > $nav.height());
     });
 
-    // navbar bg change on scroll
-    $(window).scroll(function(){
-        let pos = $(window).scrollTop();
-        if(pos >= 100){
-            $('.navbar').addClass('cng-navbar');
-        } else {
-            $('.navbar').removeClass('cng-navbar');
-        }
-    });
-
-    // sample video popup
-    $(document).ready(function() {
-        $('.popup-youtube').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-    
-            fixedContentPos: false
-        });
-    });
-
-    // team carousel 
-    $('.team .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
+    // header slider
+    $('.header-banner-wrapper').slick({
         dots: true,
-        nav: false,
-        responsiveClass: true,
-        responsive:{
-            0:{
-                items: 1
-            }, 
-            600:{
-                items: 2
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
+    // courses slider
+    $('.courses-content').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings:{
+                    slidesToShow: 2
+                }
             },
-            1000:{
-                items: 3
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-        }
+        ]
     });
-
-    // faq accordion
-    $('.faq-head').each(function(){
-        $(this).click(function(){
-            $(this).next().toggleClass('show-faq-content');
-            let icon = $(this).children('span').children("i").attr('class');
-
-            if(icon == "fas fa-plus"){
-                $(this).children('span').html('<i class = "fas fa-minus"></i>');
-            } else {
-                $(this).children('span').html('<i class = "fas fa-plus"></i>');
-            }
-        });
-    });
-
-    // testimonial carousel 
-    $('.testimonial .owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: true,
+    
+    // teachers slider
+    $('.teachers-content').slick({
+        arrows: false,
         dots: true,
-        nav: false,
-        items: 1
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 3,
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings:{
+                    slidesToShow: 3,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings:{
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
+    // clients slider
+    $('.clients-content').slick({
+        arrows:false,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true
+    });
+
+    // blogs slider
+    $('.blogs-content').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings:{
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 576,
+                settings:{
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
