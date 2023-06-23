@@ -125,7 +125,7 @@ img{
     margin-top: 5.6rem;
 }
 .header-banner.banner-one{
-    background: var(--gradient), url(../images/banner_bg_1.jpg) center/cover no-repeat;
+    background: var(--gradient), url(../images/nurse6.jpg) center/cover no-repeat;
 }
 .header-banner.banner-two{
     background: var(--gradient), url(../images/banner_bg_2.jpg) center/cover no-repeat;
