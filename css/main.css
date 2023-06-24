@@ -2,7 +2,7 @@
 :root{
     --nunito-font: 'Nunito Sans', sans-serif;
     --montserrat-font: 'Montserrat', sans-serif;
-    --green-color: #27ae60;
+    --green-color: #FF0000;
     --whitesmoke-color: #f1f1f1;
     --grey-color: #c1c1c1;
     --dark-color: #1a1a1a;
@@ -287,7 +287,7 @@ img{
 
 /* programs section */
 .programs-content{
-    gap: 3rem;
+    gap: 4rem;
 }
 .programs-item{
     position: relative;
@@ -478,7 +478,7 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
     .features-item h3{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .features-item .text{
         font-size: 1.8rem;
