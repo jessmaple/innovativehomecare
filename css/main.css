@@ -287,7 +287,7 @@ img{
 
 /* programs section */
 .programs-content{
-    gap: 4rem;
+    gap: 5rem;
 }
 .programs-item{
     position: relative;
@@ -296,7 +296,7 @@ img{
     overflow: hidden;
 }
 .programs-item img{
-    opacity: 0.2;
+    opacity: 0.5;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -475,7 +475,7 @@ img{
            object-fit: cover;
     }
     .features-content, .programs-content{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1);
     }
     .features-item h3{
         font-size: 2rem;
