@@ -439,7 +439,7 @@ img{
 /* media queries */
 @media(min-width: 450px){
     .navbar-brand span, .footer-logo span{
-        font-size: 2.4rem!important;
+        font-size: 2rem!important;
         margin-left: 4rem;
     }
     .header-banner h1{
