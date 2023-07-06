@@ -2,7 +2,7 @@
 :root{
     --nunito-font: 'Nunito Sans', sans-serif;
     --montserrat-font: 'Montserrat', sans-serif;
-    --green-color: #FF0000;
+    --green-color: #C82525;
     --whitesmoke-color: #f1f1f1;
     --grey-color: #c1c1c1;
     --dark-color: #1a1a1a;
@@ -287,7 +287,7 @@ img{
 
 /* programs section */
 .programs-content{
-    gap: 4rem;
+    gap: 3rem;
 }
 .programs-item{
     position: relative;
@@ -413,7 +413,7 @@ img{
     margin-bottom: 6rem;
 }
 .footer-logo img{
-    width: 40px;
+    width: 20px;
 }
 .footer-logo span{
     margin-left: 1rem;
@@ -478,7 +478,7 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
     .features-item h3{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .features-item .text{
         font-size: 1.8rem;
@@ -577,7 +577,7 @@ img{
     }
 
     .programs-content{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1);
     }
 
     .newsletter-content{
@@ -681,5 +681,6 @@ img{
     .footer-links a{
         margin: 0;
         margin-left: 4rem;
+        margin-bottom: 2rem;
     }
 }
