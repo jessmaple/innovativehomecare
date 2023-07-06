@@ -287,17 +287,16 @@ img{
 
 /* programs section */
 .programs-content{
-    gap: 5rem;
-    grid-template-columns: repeat(1);
+    gap: 4rem;
 }
 .programs-item{
     position: relative;
     background-color: var(--green-color);
-    min-height: 400px;
+    min-height: 360px;
     overflow: hidden;
 }
 .programs-item img{
-    opacity: 0.6;
+    opacity: 0.2;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -463,7 +462,7 @@ img{
 
 @media(min-width: 678px){
     .about-content{
-        grid-template-columns: repeat(1);
+        grid-template-columns: repeat(2, 1fr);
         row-gap: 0;
         padding: 6rem 0;
     }
@@ -476,7 +475,7 @@ img{
            object-fit: cover;
     }
     .features-content, .programs-content{
-        grid-template-columns: repeat(1);
+        grid-template-columns: repeat(2, 1fr);
     }
     .features-item h3{
         font-size: 2rem;
@@ -578,7 +577,7 @@ img{
     }
 
     .programs-content{
-        grid-template-columns: repeat(1);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .newsletter-content{
