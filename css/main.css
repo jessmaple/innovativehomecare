@@ -409,11 +409,11 @@ img{
 .footer{
     padding: 3rem 0;
 }
-.footer-logo{
+/* .footer-logo{
     margin-bottom: 6rem;
-}
+} */
 .footer-logo img{
-    width: 20px;
+    width: 200px;
 }
 .footer-logo span{
     margin-left: 1rem;
